@@ -1,0 +1,38 @@
+{
+    "keysOrder": ["Team Size", "Environment",  "Task", "Element under Investigation", "Prevalence", "Overall", "Cognition", "Affect","Affective Direction","Outcome"],
+    
+    "buttonsOrder": {
+      "Team Size": ["Dyad", "Small", "Large", "Not Available"],
+      "Environment": ["Professional", "Private", "Not Available"],
+      "Task": ["Generation", "Choosing", "Negotiation", "Execution", "Not Available"],
+      "Technological Element under Investigation": ["Video", "Audio", "Self-view", "Combination / Holistic", "Support Feature"], 
+      "Prevalence": ["Basic Feature", "Novel Generic Feature", "Novel Biosignal-based Feature"], 
+      "Overall": ["Cognition", "Affect", "Both"], 
+      "Cognition": ["Awareness", "Attention", "Creativity", "Decision-making", "Learning", "Mental Load", "Multiple"], 
+      "Affect": ["Emotion", "Feeling", "Mood", "Multiple"], 
+      "Affective Direction": ["Positive", "Negative"],
+      "Outcomes": ["Individual Well-being", "Performance", "User Experience", "Interpersonal Relationship", "Not Available", "Multiple"]
+    },
+    "groups": [
+      {
+        "name": "Context",
+        "keys": ["Team Size", "Environment"]
+      },
+      {
+        "name": "Task",
+        "keys": [ "Task"]
+      },
+      {
+        "name": "Technology",
+        "keys": ["Technological Element under Investigation", "Prevalence"]
+      },
+      {
+        "name": "Psychological User State",
+        "keys": ["Overall", "Cognition", "Affect", "Affective Direction"]
+      },
+      {
+        "name": "Outcome",
+        "keys": ["Outcomes"]
+      }
+    ]
+  }
