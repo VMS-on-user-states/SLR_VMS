@@ -86,8 +86,9 @@ h1 {
 
 
 .button-disabled {
-    background-color: #999;
+    background-color: #E8E8E8;
     cursor: not-allowed;
+    color: #808080;
   }
 
 
