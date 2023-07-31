@@ -59,12 +59,13 @@ function renderTable(data) {
     
 
     tableBody.innerHTML = data.map(paper => {
-        let displayDOI;
-        if (paper.DOI_URL.startsWith('https://doi.org/')) {
-            displayDOI = paper.DOI_URL.replace('https://doi.org/', '');
-        } else {
-            displayDOI = paper.DOI_URL.slice(0, 30) + '...';
-        }
+        
+      let displayDOITEXT;
+      let doiurl; 
+      
+        doiurl = paper.DOI_URL;
+        displayDOITEXT = "Link";
+        
 
         if (paper.Cognition_note === undefined) {
             Cognition_note_display = "";
@@ -86,6 +87,8 @@ function renderTable(data) {
 
         return `
       <tr>
+       
+        <td><a href="${paper.DOI_URL}" target="_blank">${displayDOITEXT}</a></td>
         <td>${paper.Author}</td>
         <td>${paper.Year}</td>
         <td>${paper.Paper}</td>
@@ -119,12 +122,21 @@ function renderTable(data) {
         
     });
 
+    tableBody.querySelectorAll('tr').forEach((row) => {
+
+    });
+    
+    
+    
+
     document.querySelectorAll('.filter-btn').forEach((btn) => {
         btn.addEventListener('mouseover', () => {
             highlightFilters({});
         });
     });
 }
+
+
 
 // Create filter groups based on the provided data and ordering
 function createFilters(jsonData, orderingData) {
