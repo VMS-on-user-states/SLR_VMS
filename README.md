@@ -1,6 +1,6 @@
 # Interactive Morphological Box - Video Meeting Systems and User States 
 
-Please find the live version at [https://anonymauthors-vms.github.io/SLR_VMS/](https://vms-on-user-states.github.io/SLR_VMS/)
+Please find the live version at (https://vms-on-user-states.github.io/SLR_VMS/)
 In case you want to cite this website, please cite:
 Authors and related publication:
 Julia Seitz, Ivo Benke, Armin Heinzl, Alexander Maedche, (2023). The impact of video meeting systems on psychological user states: A state-of-the-art review, International Journal of Human-Computer Studies, 2023,
